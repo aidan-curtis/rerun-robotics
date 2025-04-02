@@ -13,7 +13,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
 ]
-
 dependencies = [
     "numpy",
     "pybullet",
@@ -29,14 +28,20 @@ dev = [
     "isort",
 ]
 
-[tool.black]
-line-length = 120
-
 [project.urls]
 "Source" = "https://github.com/williamshen-nz/rerun-robotics"
 
+[tool.setuptools]
+include-package-data = true
+
 [tool.setuptools.packages]
 find = { include = ["rerun_robotics"] }
+
+[tool.setuptools.package-data]
+rerun_robotics = ["spot_description/**"]
+
+[tool.black]
+line-length = 120
 
 [build-system]
 requires = ["setuptools>=61.0"]
