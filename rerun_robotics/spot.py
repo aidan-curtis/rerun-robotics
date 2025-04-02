@@ -8,7 +8,7 @@ from yourdfpy import URDF
 from rerun_robotics.rerun_urdf import log_scene
 
 # We load the pybullet panda
-spot_assets_dir = "/Users/aidancurtis/rerun-robotics/rerun_robotics/spot_description/"
+spot_assets_dir = "./spot_description/"
 spot_urdf_path = os.path.join(spot_assets_dir, "mobile_model.urdf")
 
 default_conf = {
