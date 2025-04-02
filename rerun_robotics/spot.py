@@ -8,7 +8,7 @@ import pathlib
 from rerun_robotics.rerun_urdf import log_scene
 
 # We load the pybullet panda
-spot_assets_dir = os.path.join(pathlib.Path(__file__), "./spot_description/")
+spot_assets_dir = os.path.join(pathlib.Path(__file__).parent, "./spot_description/")
 
 spot_urdf_path = os.path.join(spot_assets_dir, "mobile_model.urdf")
 
