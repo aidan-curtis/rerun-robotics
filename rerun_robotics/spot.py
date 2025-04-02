@@ -4,11 +4,12 @@ from typing import Sequence
 import numpy as np
 import rerun as rr
 from yourdfpy import URDF
-
+import pathlib
 from rerun_robotics.rerun_urdf import log_scene
 
 # We load the pybullet panda
-spot_assets_dir = "./spot_description/"
+spot_assets_dir = os.path.join(pathlib.Path(__file__), "./spot_description/")
+
 spot_urdf_path = os.path.join(spot_assets_dir, "mobile_model.urdf")
 
 default_conf = {
